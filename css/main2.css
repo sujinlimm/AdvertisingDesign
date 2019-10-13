@@ -3,12 +3,13 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
-body{
-	background-image: url(home.png);
-	background-size: cover;
-	}
-
+html { 
+  background: url(home.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 .wrap {
 	float: left;
@@ -16,7 +17,7 @@ body{
 	position: relative;
 	width: 740px;
 	margin-left:296px;
-	margin-top:101px;
+	margin-top:70px;
 }
 
 .magnifier {

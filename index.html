@@ -4,53 +4,56 @@
 		<meta charset="UTF-8">
 		<title>TypeSetting</title>
 		<link rel="stylesheet" href="style.css">
-		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-	
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-		<div class="container">
-			<header>
-				<ul>
-					<li>푸른솔</li>
-					<li>본문용 부리체</li>
-					<li>본문:  크기 10pt, 행간 22pt <br> 제목:  크기 32pt, 행간 48pt</li>
-				</ul>
-			</header>
-			<article>
-				<div class="aside">
-					<div class="inputBox">
-					<div class="typing">
-						<p>조판테스트</p>
-						<input type="text" id="typingText" oninput="myFunction()" placeholder="여기에 입력하세요.">
-					</div>
-					<div class="input">
-						<div class="buttonTitle">
-							<ul>
-								<li>글자 크기</li>
-								<li>단어 사이</li>
-								<li>글줄 사이</li>
-							</ul>
+		<section class="background one">
+			<div class="container">
+
+				<header>
+					<ul>
+						<li>푸른솔</li>
+						<li>본문용 부리체</li>
+						<li>본문:  크기 10pt, 행간 22pt <br> 제목:  크기 32pt, 행간 48pt</li>
+					</ul>
+				</header>
+				<article>
+					<div class="aside">
+						<div class="inputBox">
+						<div class="typing">
+							<p>조판 Typesetting</p>
+							<input type="text" id="typingText" oninput="myFunction()" placeholder=" ➤ 여기에 입력하세요.">
 						</div>
-						<div class="button">
-							<input type="range" id="typesize" oninput="typesize()" min="24" max="250" value="30" step="10">
-							<input type="range" id="word" oninput="word()" min="6" max="100" value="50" step="10">
-							<input type="range" id="line" oninput="line()" min="50" max="320" value="70" step="10">
+						<div class="input">
+							<div class="buttonTitle">
+								<ul>
+									<li>글자 크기</li>
+									<li>단어 사이</li>
+									<li>글줄 사이</li>
+								</ul>
+							</div>
+							<div class="button">
+								<input type="range" id="typesize" oninput="typesize()" min="24" max="250" value="30">
+								<input type="range" id="word" oninput="word()" min="0" max="" value="3" >
+								<input type="range" id="line" oninput="line()" min="50" max="320" value="70">
+							</div>
+						</div>
+						</div>
+						<div class="intro">
+						<p>
+							청춘의 그와 천지는 인간의 발휘하기 구할 되는 긴지라 듣는다. 가치를 곳으로 실로 그것은 꾸며 얼음이 보라. 못하다 이상의 그들의 이것은 하는 쓸쓸하랴? 대중을 투명하되 같지 없는 불러 때문이다. 있는 내는 때에, 우리의 뜨고, 쓸쓸한 갑 인간의 미묘한 것이다. 옷을 피어나는 피가 피고, 용감하고 같이, 사람은 무엇을 돋고, 사막이다.
+							전인 그러므로 피부가 착목한는 보배를 이상의 기관과 그리하였는가? 이상의 그와 그들의 
+						</p>
 						</div>
 					</div>
+					<div class="typeSetting">
+						<p id="test">우리는 눈 속의 나무 등걸과도 같기 때문이다. 겉으로 보기에 그것들은 놓여 있는 것 같아서 살짝만 밀어도 밀어내버릴 수 있을 것만 같다 아니,그럴 수는 없다. 그것들은  바닥에 단단하게 결합되어 있기 때문이다. 그러나 보라! 그것마저도 다만 그렇게 보일 뿐이다. <br><br> 프란츠 카프카 단편집, 『나무들 』
+						</p>
 					</div>
-					<div class="intro">
-					<p>
-						청춘의 그와 천지는 인간의 발휘하기 구할 되는 긴지라 듣는다. 가치를 곳으로 실로 그것은 꾸며 얼음이 보라. 못하다 이상의 그들의 이것은 하는 쓸쓸하랴? 대중을 투명하되 같지 없는 불러 때문이다. 있는 내는 때에, 우리의 뜨고, 쓸쓸한 갑 인간의 미묘한 것이다. 옷을 피어나는 피가 피고, 용감하고 같이, 사람은 무엇을 돋고, 사막이다.
-						전인 그러므로 피부가 착목한는 보배를 이상의 기관과 그리하였는가? 이상의 그와 그들의 듣기만 두기 뜨거운지라, 
-					</p>
-					</div>
-				</div>
-				<div class="typeSetting">
-					<p id="test">우리는 눈 속의 나무 등걸과도 같기 때문이다. 겉으로 보기에 그것들은 놓여 있는 것 같아서 살짝만 밀어도 밀어내버릴 수 있을 것만 같다 아니,그럴 수는 없다. 그것들은  바닥에 단단하게 결합되어 있기 때문이다. 그러나 보라! 그것마저도 다만 그렇게 보일 뿐이다. <br><br> 프란츠 카프카 단편집, 『나무들 』
-</p>
-				</div>
-			</article>
-		</div>
+				</article>
+			</div>
+		</section>
 		
 		<script>
 			

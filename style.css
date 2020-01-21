@@ -233,47 +233,83 @@ input[type=range]::-webkit-slider-thumb {
 	transition: 0.3s
 }
 
+
+
+
 @media ( max-width: 420px ) {
+	.container{
+		width: 400px;
+		height: 720px;
+	}
+	body{
+		width: 400px;
+		height: 720px;
+	}
+	
 	header { 
-	width: auto; 
+	width: 360px;
+	height: 60px;
 	margin: 0;
 	}
 	
 	article {
+		width: auto;
 		display: flex;
 		flex-direction: column; 
 	}
 	#test{
-		width: 100vh;
+		width: auto;
 		border-left: none;
 	}
 	.intro{
 		display: none;
 	}
 	#typingText{
-		width: 100vh;
-		height: 80px;
+		width: 330px;
+		height: 40px;
 		border-radius: 80px;
+		margin-top: 0;
 	}
 	header ul li{
-		font-size: 32px;
-		margin-top: 30px;
+		font-size: 1.3rem;
+		margin-top: 0px;
 	}
 	header ul li:nth-child(1){
-		margin-left: 50px;
+		margin-left: 20px;
 	}
+	
+	header ul li:nth-child(2){
+		margin-left: 150px;
+	}
+	
 	header ul li:nth-child(3){
-		margin-left: 320px;
-	}
-	header{
-		padding-bottom: 44px;
+		display: none;
 	}
 	.typing p{
-		font-size: 32px;
+		font-size: 1.3rem;
 	}
+	
 	.button{
-		margin-top: 100px;
-		width: 100%;
+		margin-top: 0px;
+		width: 100px;
+	}
+	.input{
+		margin-top: 0;
+		width: 330px;
+		height: 150px;
+	}
+	.input input{
+		width: 220px;
+	}
+	.inputBox{
+		height: 284px
+	}
+	.buttonTitle{
+		width: 100px;
+	}
+	#test{
+		width: 330px;
+		height: 600px;
 	}
 }
 

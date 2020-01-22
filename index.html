@@ -15,7 +15,7 @@
 					<ul>
 						<li>푸른솔</li>
 						<li>본문용 부리체</li>
-						<li>본문:  크기 10pt, 행간 22pt <br> 제목:  크기 32pt, 행간 48pt</li>
+						<li>적정 본문:  크기 10pt, 행간 22pt <br> 적정 제목:  크기 32pt, 행간 48pt</li>
 					</ul>
 				</header>
 				<article>
@@ -48,7 +48,7 @@
 						</div>
 					</div>
 					<div class="typeSetting">
-						<p id="test">우리는 눈 속의 나무 등걸과도 같기 때문이다. 겉으로 보기에 그것들은 놓여 있는 것 같아서 살짝만 밀어도 밀어내버릴 수 있을 것만 같다 아니,그럴 수는 없다. 그것들은  바닥에 단단하게 결합되어 있기 때문이다. 그러나 보라! 그것마저도 다만 그렇게 보일 뿐이다. <br><br> 프란츠 카프카 단편집, 『나무들 』
+						<p id="test">우리는 눈 속의 나무 등걸과도 같기 때문이다. 겉으로 보기에 그것들은 놓여 있는 것 같아서 살짝만 밀어도 밀어내버릴 수 있을 것만 같다 아니,그럴 수는 없다. 그것들은  바닥에 단단하게 결합되어 있기 때문이다. 그러나 보라. 그것마저도 다만 그렇게 보일 뿐이다. <br><br> 프란츠 카프카 단편집, 『나무들 』
 						</p>
 					</div>
 				</article>
@@ -61,11 +61,13 @@
 			document.getElementById("test").innerHTML = x;
 		} //input typing
 		
-			
+	
 			
 		function typesize() {
         var v = document.getElementById("typesize").value;
         document.getElementById("test").style.fontSize = v + "px";
+		var v2 = document.getElementById("typesize").value*1.5;
+        document.getElementById("test").style.lineHeight = v2 + "px";
         }
 			
         function word() {

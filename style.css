@@ -29,8 +29,8 @@ body{
 
 header{
 /*	border: 2px solid red;*/
-	border-bottom: 1px dotted rgb(10,10,10);
-	height: 100px;
+	border-bottom: 1px solid rgb(10,10,10);
+	height: 90px;
 }
 
 header ul{
@@ -51,11 +51,11 @@ header ul li:nth-child(1){
 	font-weight: 700;
 }
 header ul li:nth-child(2){
-	margin-left: 340px;
+	margin-left: 350px;
 }
 
 header ul li:nth-child(3){
-	margin-left: 620px;
+	margin-left: 600px;
 }
 
 
@@ -66,7 +66,7 @@ article{
 	display:flex;
 	flex-direction: row;
 /*	border: 2px solid red;*/
-	height: 810px;
+	height: 820px;
 }
 .aside{
 /*	border: 2px solid green;*/
@@ -161,7 +161,7 @@ article{
 	display: flex;
 	flex-direction: row;
 /*	border: 1px solid red;*/
-	border-bottom: 1px dotted rgb(150,150,150);
+	border-bottom: 1px dotted rgb(10,10,10);
 	width: 360px;
 	height: 180px;
 	margin-left: 16px;
@@ -236,6 +236,7 @@ input[type=range]::-webkit-slider-thumb {
 
 
 
+/*
 @media ( max-width: 420px ) {
 	body{
 		width: 100%;
@@ -248,7 +249,7 @@ input[type=range]::-webkit-slider-thumb {
 	
 	header { 
 	width: 360px;
-	height: 60px;
+	height: 30px;
 	margin: 0;
 	}
 	
@@ -276,6 +277,7 @@ input[type=range]::-webkit-slider-thumb {
 	}
 	header ul li:nth-child(1){
 		margin-left: 20px;
+		color: dodgerblue;
 	}
 	
 	header ul li:nth-child(2){
@@ -317,6 +319,7 @@ input[type=range]::-webkit-slider-thumb {
 		height: 100vh;
 	}
 }
+*/
 
 
 

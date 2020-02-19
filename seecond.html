@@ -5,7 +5,6 @@
 	<title>fontTest</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:700,900&display=swap" rel="stylesheet">
 	<style>
 		
 		*{
@@ -18,17 +17,11 @@
 		body{
 			background-color: rgb(245,245,245);
 		}
-		
-		
-		.background3{
+		.background1{
 			width: 100%;
 			height: 100vh;
 			background-color: rgb(245,245,245);
 		}
-		
-		
-		
-		
 		nav{
 			width: 100%;
 			height: 60px;
@@ -36,10 +29,6 @@
 			position: relative;
 			display: flex;
 			flex-direction: row;
-			position: fixed;
-			left: 0;
-			top: 0;
-			z-index: 2;
 		}
 		
 		nav ul{
@@ -48,24 +37,20 @@
 			margin-left: 18%;
 			
 		}
-		
 		nav ul li{
 			font-size: 1.2rem;
 			font-weight: 700;
 			width: 72px;
 			float: left;
 			margin-right: 60px;
-			margin-top: 16px;
+			margin-top: 20px;
 /*			border: 1px solid red;*/
 			
 		}
-		
 		nav ul li a{
 			color: rgb(245,245,245);
 			text-decoration: none;
 		}
-		
-		
 		
 
 		#gift a{
@@ -74,15 +59,15 @@
 			top: 16px;
 			position: absolute;
 			right: 18%;;
-			width: 84px;
+			width: 80px;
 			height: 24px;
 			text-decoration: none;
 			color: white;
 			background-color: black;
 			border: 1px solid white;
 			padding-left: 12px;
-			padding-top: 1px;
-			padding-bottom: 4px;
+			padding-top: 4px;
+			padding-bottom: 1px;
 			border-radius: 20px;
 		}
 		
@@ -92,30 +77,20 @@
 			color: black;
 		}
 		
-		
-		
-		
-		
 		#preview{
 			width: 64.58%;
 			height: 440px;
 /*			border: 3px solid pink;*/
 			margin: 0 auto;
-			margin-top: 100px;
+			margin-top: 120px;
 			overflow: scroll;
-			padding-top: 140px;
 		}
-		
-		
-		
-		
-		
 		article{
 			width: 64.58%;
 			height: 200px;
 /*			border: 3px solid pink;*/
 			margin: 0 auto;
-			margin-top: 100px;
+			margin-top: 120px;
 			display: flex;
 			flex-direction: row;
 		}
@@ -133,10 +108,6 @@
 			position: relative;
 		}
 		
-		
-		
-		
-		
 		.title{
 			font-size: 1.2rem;
 			font-weight: 700;
@@ -151,18 +122,16 @@
 			width: 100%;
 			height: 78%;
 			position: absolute;
-			bottom: 0;
 			background-color: rgb(232,232,232);
 			border-radius: 20px;
-			margin-top: 8px;
-/*			border: 2px solid green;*/
+			margin-top: 24px;
 		}
 		
 		#typing{
-			width: 92%;
-			margin: 0 auto;
-			margin-top: 8px;
-			height: 56px;
+			width: 95%;
+			height: 24px;
+			margin-left: 2%;
+			margin-top: 2%;
 		}
 		
 		.content2{
@@ -178,70 +147,79 @@
 		
 		
 		
-		
+		/*----모바일-----*/
+		@media all and (max-width:420px){
+			#preview{
+				width: 90%;
+				margin-top: 20px;
+				height: 320px;
+			}
+			article{
+				width: 90%;
+				margin-top: 20px;
+				display: flex;
+				flex-direction: column;
+			}
+			.font_test, .intro{
+				width: 100%;
+			}
+			.intro{
+				margin-top: 20px;
+			}
+		}
 		
 		
 		#main_preview{
 			width: 100%;
 			height: 440px;
-			font-size: 52pt;
+			font-size: 48pt;
 			line-height: 76pt;
 			overflow: scroll;
 			word-break: keep-all;
 			
 		}
 		#range_Bts{
-			width: 92%;
-			margin: 0 auto;
+			width: 97%;
+			margin: 0;
+			padding: 0;
+			position: relative;
+			margin-top: 22px;
+			display: flex;
+			flex-direction: row;
 		}
 		#range_Bts input{
 			height: 30px;
 		}
 		.input_button_range{
-			display: flex;
-			flex-direction: column;
-			height: 80px;
-/*			border: 1px solid red;*/
-		}
-		.input_button{
-			width: 100%;
+			margin-top: 12px;
 			display: flex;
 			flex-direction: row;
-/*			border: 1px solid blue;*/
+			height: 30px;
+		}
+		.input_button{
+			display: flex;
+			flex-direction: column;
+			margin-left: 3%;
 		}
 		.input_button input{
 			flex-direction: row;
 			width: 48%;
-/*			border: 1px solid brown;*/
-			padding-bottom: 4px;
-			padding-top: 4px;
 		}
 		.input_button input:first-child{
 			margin-right: 8%;
 		}
-		
-		.input_button_title{
-			width: 60%;
-			height: 80px;
-			display: flex;
-			flex-direction: column;
-/*			border: 2px solid pink;*/
-		}
-		
-		.input_button_title span{
+		.input_button_title span:first-child{
+			margin-right: 34%;
 			font-size: 1.2rem;
-/*			border: 1px solid red;*/
 		}
 		
 		#typingText{
 			background-color: rgb(232,232,232);
 			border: none;
-			border-bottom: 1px dotted black;
+			border-bottom: 1px solid black;
 			font-size: 1.2rem;
-			height: 24px;
+			height: 28px;
 			margin-top: 8px;
-			padding-bottom: 4px;
-			padding-bottom: 4px;
 		}
 		#typingText::placeholder{
 			color: #4B6EFF;
@@ -269,18 +247,8 @@
 			height: 16px; width: 16px;   
 			border-radius: 30px;
 			margin-top: -5px;
-			transition: 0.3s
+
 		}
-		
-		input[type=range]::-webkit-slider-thumb:hover{
-			border: 1px solid #4B6EFF; 
-			background-color: #4B6EFF;
-		}
-		
-		input[type=range]::-webkit-slider-runnable-track:hover { 
-			background-color: rgb(75,110,255,0.2);
-		}
-		
 		input[type=range]:focus {
  			 outline: none;
 		}
@@ -288,115 +256,20 @@
 		input[type=text]:focus {
   			outline: none;
 		}
-
-		#first_link{
+		
+		#second_link{
 			color: #4B6EFF;
 		}
-		#second_link:hover{
+		
+		#first_link:hover{
 			color: #4B6EFF;
-		}
-		.content2{
-			width: 95%;
-			margin: 0 auto;
-			margin-top: 16px;
-			line-height: 2.5rem;
-		}
-	
-
-		
-		/*----모바일-----*/
-		@media all and (max-width:420px){
-			#preview{
-				width: 88%;
-				margin-top: 20px;
-				margin-bottom: 20px;
-				padding-top: 60px;
-				height: 280px;
-			}
-			article{
-				width: 90%;
-				margin-top: 20px;
-				display: flex;
-				flex-direction: column;
-			}
-			.font_test, .intro{
-				width: 100%;
-			}
-			.intro{
-				margin-top: 20px;
-			}
-			#font_list{
-				margin-left: 20px;
-			}
-			#font_list li{
-				margin-right: 16px;
-			}
-			#gift{
-				position: absolute;
-				margin-left: 44px;
-			}
-			
-			.content{
-				margin-top: 400px;
-				height: 160px;
-			}
-			.title{
-				display: none;
-				font-weight: 900;
-			}
-			.font_test{
-				margin-top: 160px;
-			}
-			.background1, .background2{
-				display: none;
-			}
-			.input_button_title{
-				width: 100%;
-			}
-			.content2{
-				text-align: center;
-				margin-left: 10px;
-			}
-			footer{
-				padding-top: 200px; 
-				margin: 0 auto;
-				margin-left: 10px;
-				color: rgb(180,180,180);
-			}
-			footer{
-				display: none;
-			}
-		}
-		
-		@media all and (max-width:1024px){
-			.background1, .background2{
-				display: none;
-			}
-		}
-		
-		
-		footer{
-			width: 280px;
-			height: 30px;
-			margin:0 auto;
-			margin-top: 100px;
-		}
-		
-		.background1{
-			background-image: url(img/img1.png);
-			background-attachment: fixed;
-		}
-		.background2{
-			background-image: url(img/img2.png);
-			background-attachment: fixed;
 		}
 		
 	</style>
 </head>
 <body>
-	<div class="background1"></div>
-	<div class="background2"></div>
-	<div class="background3">
+	
+	<div class="background1">
 		<nav>
 			<ul id="font_list">
 				<li><a href="index.html" id="first_link">길상체</a></li>
@@ -421,13 +294,14 @@
 					<div id="range_Bts">
 					
 						<div class="input_button">
-							<div class="input_button_title">
-								<span>글자 크기 40pt</span>
-								<span>글줄 사이 60pt</span>
-							</div>
 							<div class="input_button_range">
 								<input type="range" id="typesize" oninput="typesize()" min="10" max="76" value="15">
 								<input type="range" id="line" oninput="line()" min="24" max="300" value="34">
+							</div>
+							
+							<div class="input_button_title">
+								<span>글자크기 40pt</span>
+								<span>글줄사이 60pt</span>
 							</div>
 						</div>
 						
@@ -436,12 +310,9 @@
 			</section>
 			<section class="intro">
 				<div class="title">소개하기</div>
-				<div class="content2">청춘의 이상은 더운지라 그리하였는가? 아름답고 튼튼하며, 할지니, 새 구하지 봄바람이다. 역사를 황금시대를 설레는 열매를 따뜻한 것이다. 같이, 살았으며, 관현악이며, 것은 얼음과 어디 같지 때까지 것이다. 이상은 가치를 공자는 사막이다.</div>
+				<div class="content2">청춘의 이상은 더운지라 그리하였는가? 아름답고 튼튼하며, 할지니, 새 구하지 봄바람이다. 역사를 황금시대를 설레는 열매를 따뜻한 것이다. 같이, 살았으며, 관현악이며, 것은 얼음과 어디 같지 때까지 것이다. 이상은 가치를 공자는 사막이다. 영원히 곳이 예수는 놀이 얼음에 뼈 인생의 하여도 있으랴? 예수는 놀이 얼음에 뼈 인생의 하여도 있으랴?</div>
 			</section>
 		</article>
-		<footer>
-			<span>Sujin Lim &nbsp; | &nbsp; sujinlim02@gmail.com</span>
-		</footer>
 	</div>
 	
 	<script type="text/javascript">

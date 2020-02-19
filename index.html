@@ -53,6 +53,7 @@
 			font-size: 1.2rem;
 			font-weight: 700;
 			width: 72px;
+			height: 24px;
 			float: left;
 			margin-right: 60px;
 			margin-top: 16px;
@@ -61,6 +62,8 @@
 		}
 		
 		nav ul li a{
+			width: 72px;
+			height: 24px;
 			color: rgb(245,245,245);
 			text-decoration: none;
 		}
@@ -306,6 +309,15 @@
 		
 		/*----모바일-----*/
 		@media all and (max-width:420px){
+			#second_link{
+				position: absolute;
+				z-index: 999;
+			}
+			
+			nav li{
+				margin-left: -47px;
+			}
+			
 			#preview{
 				width: 88%;
 				margin-top: 20px;
@@ -373,12 +385,6 @@
 			}
 		}
 		
-		@media all and (max-width:1024px){
-			.background1, .background2{
-				display: none;
-			}
-		}
-		
 		
 		footer{
 			width: 280px;
@@ -403,9 +409,9 @@
 	<div class="background2"></div>
 	<div class="background3">
 		<nav>
-			<ul id="font_list">
-				<li><a href="index.html" id="first_link" target="self">길상체</a></li>
-				<li><a href="second.html" id="second_link" target="self">푸른솔체</a></li>
+			<ul>
+				<li><a href="index.html" id="first_link" target="self">길상체</a></li>	
+				<li><a href="sub.html" id="second_link" target="self">푸른솔체</a></li>
 			</ul>
 			<div id="gift">
 				<a href="https://tumblbug.com" target="parent">후원하기</a>
